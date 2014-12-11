@@ -16,6 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *beerCountLabel;
+
 @end
 
 @implementation ViewController
@@ -43,9 +45,10 @@
 }
 
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
-    NSLog(@"Slider value changed to %f", sender.value);
-    [self.beerPercentTextField resignFirstResponder];
-    
+     NSLog(@"Slider value changed to %f", sender.value);
+    [self.beerCountLabel setText:@(sender.value).stringValue];
+     [self.beerPercentTextField resignFirstResponder];
+    [self buttonPressed:nil];
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
