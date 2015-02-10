@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333213A21A40BB280089FD0E /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333213A11A40BB280089FD0E /* WhiskeyViewController.m */; };
 		33BC9B8A1A2E4D9E006034B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BC9B891A2E4D9E006034B0 /* main.m */; };
 		33BC9B8D1A2E4D9E006034B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BC9B8C1A2E4D9E006034B0 /* AppDelegate.m */; };
 		33BC9B901A2E4D9E006034B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BC9B8F1A2E4D9E006034B0 /* ViewController.m */; };
-		33BC9B931A2E4D9E006034B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BC9B911A2E4D9E006034B0 /* Main.storyboard */; };
 		33BC9B951A2E4D9E006034B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33BC9B941A2E4D9E006034B0 /* Images.xcassets */; };
 		33BC9B981A2E4D9E006034B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33BC9B961A2E4D9E006034B0 /* LaunchScreen.xib */; };
 		33BC9BA41A2E4D9E006034B0 /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BC9BA31A2E4D9E006034B0 /* AlcolatorTests.m */; };
@@ -27,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		333213A01A40BB280089FD0E /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhiskeyViewController.h; path = ../WhiskeyViewController.h; sourceTree = "<group>"; };
+		333213A11A40BB280089FD0E /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhiskeyViewController.m; path = ../WhiskeyViewController.m; sourceTree = "<group>"; };
 		33BC9B841A2E4D9E006034B0 /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BC9B881A2E4D9E006034B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33BC9B891A2E4D9E006034B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +36,6 @@
 		33BC9B8C1A2E4D9E006034B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33BC9B8E1A2E4D9E006034B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33BC9B8F1A2E4D9E006034B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		33BC9B921A2E4D9E006034B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33BC9B941A2E4D9E006034B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		33BC9B971A2E4D9E006034B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		33BC9B9D1A2E4D9E006034B0 /* AlcolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +84,10 @@
 			children = (
 				33BC9B8B1A2E4D9E006034B0 /* AppDelegate.h */,
 				33BC9B8C1A2E4D9E006034B0 /* AppDelegate.m */,
+				333213A01A40BB280089FD0E /* WhiskeyViewController.h */,
+				333213A11A40BB280089FD0E /* WhiskeyViewController.m */,
 				33BC9B8E1A2E4D9E006034B0 /* ViewController.h */,
 				33BC9B8F1A2E4D9E006034B0 /* ViewController.m */,
-				33BC9B911A2E4D9E006034B0 /* Main.storyboard */,
 				33BC9B941A2E4D9E006034B0 /* Images.xcassets */,
 				33BC9B961A2E4D9E006034B0 /* LaunchScreen.xib */,
 				33BC9B871A2E4D9E006034B0 /* Supporting Files */,
@@ -199,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33BC9B931A2E4D9E006034B0 /* Main.storyboard in Resources */,
 				33BC9B981A2E4D9E006034B0 /* LaunchScreen.xib in Resources */,
 				33BC9B951A2E4D9E006034B0 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33BC9B901A2E4D9E006034B0 /* ViewController.m in Sources */,
+				333213A21A40BB280089FD0E /* WhiskeyViewController.m in Sources */,
 				33BC9B8D1A2E4D9E006034B0 /* AppDelegate.m in Sources */,
 				33BC9B8A1A2E4D9E006034B0 /* main.m in Sources */,
 			);
@@ -244,14 +246,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		33BC9B911A2E4D9E006034B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33BC9B921A2E4D9E006034B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		33BC9B961A2E4D9E006034B0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +340,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +351,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +408,7 @@
 				33BC9BA91A2E4D9E006034B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33BC9BAA1A2E4D9E006034B0 /* Build configuration list for PBXNativeTarget "AlcolatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +417,7 @@
 				33BC9BAC1A2E4D9E006034B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
