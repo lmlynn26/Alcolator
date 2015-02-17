@@ -39,6 +39,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    self.title = NSLocalizedString(@"Wine", @"Wine");
+    
 
     //calls the superclass' implementation
     [super viewDidLoad];
@@ -100,6 +103,8 @@
     [self.beerCountLabel setText:@(sender.value).stringValue];
      [self.beerPercentTextField resignFirstResponder];
     [self buttonPressed:nil];
+    
+    self.title = [NSString stringWithFormat:@"Wine (%d glasses)" , (int) sender.value];
 }
 
 //- (IBAction)buttonPressed:(UIButton *)sender {
@@ -169,7 +174,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
     
-    //add each view and the gesture recognizer as teh view's subviews
+    //add each view and the gesture recognizer as the view's subviews
     [self.view addSubview:textField];
     [self.view addSubview:slider];
     [self.view addSubview:label];
@@ -193,7 +198,7 @@
     CGFloat itemWidth = viewWidth - padding - padding;
     CGFloat itemHeight = 44;
     
-    self.beerPercentTextField.frame = CGRectMake(padding, padding, itemWidth, itemHeight);
+    self.beerPercentTextField.frame = CGRectMake(padding, padding + 50, itemWidth, itemHeight);
     
     CGFloat bottomOfTextField = CGRectGetMaxY(self.beerPercentTextField.frame);
     self.beerCountSlider.frame = CGRectMake(padding, bottomOfTextField + padding, itemWidth, itemHeight);
