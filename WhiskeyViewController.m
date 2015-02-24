@@ -14,6 +14,27 @@
 
 @implementation WhiskeyViewController
 
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        self.title = NSLocalizedString(@"Whiskey", nil);
+        
+    }
+    
+    return self;
+    
+}
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    
+    //  self.title = NSLocalizedString(@"Whiskey", @"Whiskey");
+    
+    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.992 blue:0.588 alpha:1];  /*fdfd96*/
+    
+    
+}
+
 - (void)buttonPressed:(UIButton *)sender;
 {
     [self.beerPercentTextField resignFirstResponder];
@@ -47,9 +68,20 @@
         whiskeyText = NSLocalizedString(@"shots", @"plural of shots");
     }
     
-    NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ contains as much alcohol as %.", nil), numberOfBeers, beerText, numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
+    NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ contains as much alcohol as %.1f %@ of Whiskey.", nil), numberOfBeers, beerText, numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
                                                                         
     self.resultLabel.text = resultText;
+    
 }
+
+- (void)sliderValueDidChange:(UISlider *)sender {
+    
+    [super sliderValueDidChange:sender];
+    
+    self.title = [NSString stringWithFormat:@"Whiskey (%d glasses)" , (int) sender.value];
+    
+    
+}
+
 
 @end

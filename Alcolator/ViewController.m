@@ -38,9 +38,24 @@
 
 @implementation ViewController
 
+- (instancetype) init {
+    self = [super init];
+    
+    if (self) {
+        self.title = NSLocalizedString(@"Wine", @"wine");
+        
+        [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    }
+    return self;
+
+}
+
 - (void)viewDidLoad {
     
-    self.title = NSLocalizedString(@"Wine", @"Wine");
+    //  self.title = NSLocalizedString(@"Wine", @"Wine");
+    
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1]; /*bdecb6*/
+    
     
 
     //calls the superclass' implementation
@@ -101,7 +116,9 @@
 
      NSLog(@"Slider value changed to %f", sender.value);
     [self.beerCountLabel setText:@(sender.value).stringValue];
-     [self.beerPercentTextField resignFirstResponder];
+    [self.beerPercentTextField resignFirstResponder];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+
     [self buttonPressed:nil];
     
     self.title = [NSString stringWithFormat:@"Wine (%d glasses)" , (int) sender.value];
